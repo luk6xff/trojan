@@ -9,7 +9,7 @@ RUN apk add --no-cache --virtual .build-deps \
         mariadb-connector-c-dev \
     && (cd trojan && cmake . && make -j $(nproc) && strip -s trojan \
     && mv trojan /usr/local/bin) \
-    && rm -rf trojan \
+    #&& rm -rf trojan \
     && apk del .build-deps \
     && apk add --no-cache --virtual .trojan-rundeps \
         libstdc++ \
