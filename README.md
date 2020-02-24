@@ -10,7 +10,7 @@ Trojan is not a fixed program or protocol. It's an idea, an idea that imitating 
 
 ## Documentations
 
-An online documentation can be found [here](https://trojan-gfw.github.io/trojan/).  
+An online documentation can be found [here](https://trojan-gfw.github.io/trojan/).
 Installation guide on various platforms can be found in the [wiki](https://github.com/trojan-gfw/trojan/wiki/Binary-&-Package-Distributions).
 
 ## Contributing
@@ -23,6 +23,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [Boost](http://www.boost.org/) >= 1.66.0
 - [OpenSSL](https://www.openssl.org/) >= 1.1.0
 - [libmysqlclient](https://dev.mysql.com/downloads/connector/c/)
+
+
+## Build and Run
+```
+$ cd trojan && docker build . -t lu-trojan
+$ docker run -t lutroj:0.1
+$ docker run -it --entrypoint=/bin/sh lutroj:0.1 -i
+```
+
 
 ## License
 
